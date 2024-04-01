@@ -1,36 +1,37 @@
-# Isaac Acosta, Cayden Haas, Eddie Brito
-# CSCI 428
-# Night Owls
+Night Owls - Isaac Acosta, Cayden Haas, Eddie Brito
 
-Topic: Zero Trust Management
+CSCI 428
 
-Zero Trust Management is a strategic approach to cybersecurity that operates on the principle "never trust, always verify." This model dictates that no entity inside or outside the network is trusted by default, and verification is required from everyone trying to access resources on the network. This concept is becoming increasingly important as organizations face cyber threats and traditional security models fall short.
+# **OwlGuard**
 
-Design:
+It is a password manager application designed to securely store your passwords.
 
-Focuses on strict access controls and verification processes.
+## **Implementation:**
 
--   Least Privilege Access: Ensuring that users and systems have only the minimum level of access necessary to perform their tasks.
+Focuses on the verification process.
 
--   Micro-segmentation: Dividing the network into small, secure zones to control traffic flow and limit access.
+- Two-Factor Authentication (2FA): Implementing 2 layers of authentication to verify the identity of users and devices.
+  - Password
+  - QR Code - leads to a passcode
+    
+- Using Authentication Apps: Add an account by scanning the QR code.
+  - Examples: Duo, Google Authenticator, Authy, and etc..
+  - Dynamic Passcode Generation: Continuously generating new authentication codes for all devices and endpoints.
 
--   Multi-factor Authentication (MFA): Implementing multiple layers of authentication to verify the identity of users and devices.
+## **Design:**
 
--   Continuous Monitoring and Validation: Regularly verifying the security posture of all devices and endpoints.
-
-In Java, there is a library called Spring Security; its architecture could leverage authentication and authorization and microservices to create isolated and secure zones. Each service is a gatekeeper, ensuring access is granted only after rigorous authentication and authorization.
-
-Idea:
-
-Our core idea revolves around creating a Java-based application that embodies the Zero Trust principles. This application could be a web service or an application where access to different services requires passing through multiple layers of security checks. The application will use Java's security frameworks and libraries to implement features like MFA, encryption, and secure API gateways.
-
-Challenges/Problems:
-
-1.  Adopting a zero-trust architecture requires a significant overhaul of existing systems, which can be complex and resource-intensive when trying to implement.
-
-2.  Ensuring compatibility and integrating Zero Trust principles with older legacy systems can pose significant challenges.
-
-3.  The multiple security checks and encryption layers can introduce latency, affecting the system's performance.
-
-4.  Balancing security with user convenience is critical. Overly stringent security measures can hinder user experience and productivity.
-
+- Login page
+  - Username
+  - Password
+  - 2FA Code (shows up after 2FA is enabled)
+  - Login button
+    
+- Home page
+  - Password Log
+    - Add password
+    - Show password
+    - Delete password
+  - Update/Enable 2FA
+    - Generates QR Code
+    - Set 2FA Code
+  - Logout button
