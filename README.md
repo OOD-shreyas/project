@@ -6,6 +6,11 @@ CSCI 428
 
 It is a password manager application designed to securely store your passwords.
 
+## **How to run:**
+- In terminal type: sudo node server.js
+  - Terminal Output: "App should be listening on port: 3000"
+- Then go to URL: http://localhost:3000
+
 ## **Implementation:**
 
 Focuses on the verification process.

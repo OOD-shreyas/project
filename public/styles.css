@@ -1,0 +1,53 @@
+
+#homePage {
+    display: none;
+}
+body.logged #loginPage {
+    display: none;
+}
+body.logged #homePage {
+    display: flex;
+    background-color: #075378;
+}
+.page {
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page > * {
+    width: 300px;
+}
+
+#twoFAFormHolder {
+    display: none !important;
+}
+
+.ready #twoFAFormHolder {
+    display: flex !important;
+}
+
+#loginForm .code{
+    display: none;
+}
+
+#loginForm.codeRequested .code{
+    display: block;
+}
+
+.login-logo {
+    display: block;    /* To ensure it respects margin values */
+    margin: 30px; 
+  }
+
+.profile-pic {
+    display: block;    
+    width: 200px;
+  }
+  
+.buttonsContainer {
+    margin-left: auto;
+}
