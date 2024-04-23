@@ -13,5 +13,12 @@
             "enabled": false,
             "tempSecret": "JACG4JQILBBHI4AK"
         }
+    },
+    "isaac": {
+        "password": "12345",
+        "2FA": {
+            "enabled": false,
+            "tempSecret": "JACG4JQILBBHI4AK"
+        }
     }
 }
