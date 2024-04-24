@@ -108,5 +108,6 @@ app.get("/logout", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("App is listening on port: 3000");
+  // console.log("App is listening on port: 3000");
+  console.log("Open http://localhost:3000 in your browser");
 });
